@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Clipboard History</title>
+		<style>
+			body {
+				font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+				width: 400px;
+				height: 500px;
+				overflow: scroll;
+				background-color: #f1f1f1;
+				color: #111;
+			}
+			input[type=text], input[type=password] { padding: 5px; border-radius: 2px; width: 250px; border: 2px solid #ddd; }
+			input[type=submit], input[type=button], button { background-color: white; padding: 5px; border-radius: 2px; width: 130px; border: 2px solid #ddd; color: #aaa; display: inline-block; }
+
+		</style>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popup.js"></script>
+	</head>
+	<body>
+
+		<input id="search" type="text" placeholder="Arama...">
+		<button id="reset" type="button">Geçmişi Sıfırla</button>
+
+		<div id="history"><ul></ul></div>
+
+	</body>
+</html>
+

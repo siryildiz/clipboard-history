@@ -1,0 +1,20 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "manifest_version": 2,
+    "name": "Clipboard History 2",
+    "short_name": "Clipboard History 2",
+    "author": "Volkan Yıldız",
+    "description": "Size özel kopyalama geçmişi oluşturur. Dilediğiniz zaman kopyaladığınız veriler arasından istediğinizi kolayca arayabilirsiniz.",
+    "version": "2.0",
+    "permissions": [
+        "clipboardWrite", "clipboardRead", "background", "tabs", "storage"
+    ],
+    "browser_action": {
+        //"default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "page": "background.html"
+    }
+
+}
